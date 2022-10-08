@@ -136,8 +136,8 @@
 .cardUser{
     background-color: #30c4ae;
     border: solid 3px #7cdacc;
-    width: 250px;
-    height: 320px;
+    width: 320px;
+    height: 360px;
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -155,7 +155,7 @@
     justify-content: center;
     align-items: center;
     /* position: relative; */
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: 20px;
     top: 20px;
 }
@@ -194,10 +194,10 @@
 }
 .container__btn__user{
     display: flex;
-    width: 240px;
+    width: 300px;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
 }
 .btn_user{
     padding: 10px;
