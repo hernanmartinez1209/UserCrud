@@ -27,9 +27,13 @@ const Usercard = ({ user, deleteUserById, setUpgradeInfoUser }) => {
         <button className="btn_user" onClick={() => deleteUserById(user.id)}>
           <i className="fa-solid fa-trash"></i>
         </button>
-        <button className="btn_user" onClick={handleEdit}>
+        {/* <button className="btn_user" id="btn-modal" onClick={handleEdit}>
           <i className="fa-solid fa-user-pen"></i>
-        </button>
+        </button> */}
+        <input type="checkbox" id="btn-modal"  />
+        <label htmlFor="btn-modal" className="btn_user" onClick={handleEdit}>
+        <i className="fa-solid fa-user-pen" ></i>
+        </label>
       </div>
     </article>
   );

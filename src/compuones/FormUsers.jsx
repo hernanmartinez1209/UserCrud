@@ -34,26 +34,26 @@ useEffect(() => {
     <form className='Form-User' onSubmit={ handleSubmit(submit)}>
         <h1>{upgradeInfoUser? 'Upgrade' :'Create'}</h1>
 <div className='box-input-user'>
-    <label htmlFor="email">Email</label>
-      <input className='input-user1'  type="email" id="email" {...register('email')} />
+    <label htmlFor="email">Email User</label>
+      <input className='input-user1 input_hov'  type="email" id="email" {...register('email')} />
 </div>
 <div className='box-input-user' >
     <label htmlFor="password">Password</label>
-      <input className='input-user2'  type="password" id="password"  {...register('password')}/>
+      <input className='input-user2 input_hov'  type="password" id="password"  {...register('password')}/>
 </div>
 <div className='box-input-user' >
     <label htmlFor="first_name">First Name</label>
-     <input  className='input-user3' type="text" id="first_name"  {...register('first_name')}/>
+     <input  className='input-user3 input_hov' type="text" id="first_name"  {...register('first_name')}/>
 </div>
 <div className='box-input-user' >
     <label htmlFor="last_name">Last Name</label>
-      <input className='input-user4'  type="text" id="last_name" {...register('last_name')}/>
+      <input className='input-user4 input_hov'  type="text" id="last_name" {...register('last_name')}/>
 </div>
 <div className='box-input-user' >
     <label htmlFor="birthday">BirthDay</label>
-     <input  className='input-userb' type="date" id="birthday"  {...register('birthday')}/>
+     <input  className='input-userb input_hov' type="date" id="birthday"  {...register('birthday')}/>
 </div>
-<button>{upgradeInfoUser? 'Upgrade' :'Create'}</button>
+<button className='btn__form'>{upgradeInfoUser? 'Upgrade' :'Create'}</button>
 </form>
     // <form onSubmit={ handleSubmit(submit)}>
     //     <div>
