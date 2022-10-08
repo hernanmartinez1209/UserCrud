@@ -43,8 +43,12 @@
     padding: 10px;
     background-color: #db8046;
     color: #fff;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
 
 }
+
 .contenedor .btn__modal{
     position: absolute;
     top: 10px;
@@ -52,6 +56,11 @@
     color: #fff;
     font-size: 15px;
     cursor: pointer;
+    font-size: 30px;
+}
+.btn__modal:hover{
+    color: #FF1E1E;
+    box-shadow: 2px 2px 20 #fff;
 }
 #btn-modal{
     display: none;

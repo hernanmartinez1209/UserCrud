@@ -1,3 +1,35 @@
+.box__crud{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    justify-items: center;
+    position: relative;
+    bottom: 20px;
+    
+   
+   
+}
+
+.btn__Crud{
+    
+    background-color: #36edd2;
+    border-radius: 10px;
+   padding: 40px;
+   font-size: 20px;
+   font-weight: 600;
+   font-family: sans-serif;
+   color: #fff;
+   text-shadow: 2px 2px 10px black;
+   cursor: pointer;
+   
+   
+   
+   }
+   .btn__Crud:hover{
+    color: #FFF323;
+    border: solid 2px #bfff00;
+   }
+   
 .Form-User{
     margin: auto;
     outline: solid 1px black;
@@ -10,6 +42,10 @@
    color: #fff;
    font-family: sans-serif;
    
+}
+.Form__title{
+    text-align: center;
+    margin: 20px;
 }
 .input-user1{
     width: 300px;
@@ -71,16 +107,25 @@
 }
 .btn__form{
     height: 60px;
-    border: none;
-
+    border: 1px solid;
+    background-color: #7cdacc;
+    cursor: pointer;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.btn__form:hover{
+    color: #bfff00;
 }
 .box-input-user{
+   
     font-size: 20px;
     font-family: sans-serif;
     margin-left: 20px;
+    cursor: pointer;
 }
 .contedorUser{
-    border: solid 1px red;
+  
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -97,6 +142,9 @@
     margin-bottom: 30px;
     border-radius: 10px;
 }
+.cardUser:hover{
+    border: solid 3px #bfff00;
+}
 .circle__user{
     width: 100px;
     height: 100px;
@@ -107,7 +155,8 @@
     justify-content: center;
     align-items: center;
     /* position: relative; */
-    left: 30%;
+    margin-left: 30%;
+    margin-top: 20px;
     top: 20px;
 }
 .fa-user{

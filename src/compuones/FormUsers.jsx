@@ -32,7 +32,7 @@ useEffect(() => {
     }
     return (
     <form className='Form-User' onSubmit={ handleSubmit(submit)}>
-        <h1>{upgradeInfoUser? 'Upgrade' :'Create'}</h1>
+        <h1 className='Form__title'>{upgradeInfoUser? 'Upgrade' :'Create'}</h1>
 <div className='box-input-user'>
     <label htmlFor="email">Email User</label>
       <input className='input-user1 input_hov'  type="email" id="email" {...register('email')} />
@@ -54,6 +54,7 @@ useEffect(() => {
      <input  className='input-userb input_hov' type="date" id="birthday"  {...register('birthday')}/>
 </div>
 <button className='btn__form'>{upgradeInfoUser? 'Upgrade' :'Create'}</button>
+   
 </form>
     // <form onSubmit={ handleSubmit(submit)}>
     //     <div>

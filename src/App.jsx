@@ -2,8 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
 import FormUsers from "./compuones/FormUsers";
+import Loading from "./compuones/Loading";
 import UserCard from "./compuones/UserCard";
 import stylesModal from "./styles/stylesModal.css";
+import stylesLoanding from './styles/stylesLoading.css'
 const BASEURL = "https://users-crud1.herokuapp.com";
 function App() {
   const [users, setUsers] = useState();
@@ -58,17 +60,17 @@ function App() {
   };
   return (
     <div className="App">
-      <div>
+      <div className="box__crud">
         <input type="checkbox" id="btn-modal" />
-        <label for="btn-modal" className="btn_user">
-          Create New User
+        <label htmlFor="btn-modal" className="btn__Crud">
+          Create New User <i className="fa-solid fa-user-plus"></i>
         </label>
 
         <div className="modal">
           <div className="contenedor">
             <header>welcome</header>
-            <label for="btn-modal" className="btn__modal">
-              x
+            <label htmlFor="btn-modal" className="btn__modal">
+            <i className="fa-regular fa-circle-xmark"></i>
             </label>
             <div className="contenido">
               <div>
@@ -86,13 +88,12 @@ function App() {
 
       <div className="contedorUser">
         {users?.map((user) => (
-          <UserCard
+          user ?<UserCard
             key={user.id}
             user={user}
             deleteUserById={deleteUserById}
-            setUpgradeInfoUser={setUpgradeInfoUser}
-
-          />
+            setUpgradeInfoUser={setUpgradeInfoUser}/>
+            :<Loading />
         ))}
       </div>
     </div>

@@ -8,10 +8,10 @@ const Usercard = ({ user, deleteUserById, setUpgradeInfoUser }) => {
   return (
     <article className="cardUser">
       <div className="circle__user">
-        <i class="fa-solid fa-user"></i>
+        <i className="fa-solid fa-user"></i>
       </div>
       <h2 className="name__User">{`${user.first_name} ${user.last_name}`}</h2>
-      <ul className="box__info_user">
+      <ul className="box__info_user" >
         <li>
           {user.email}
           <span>email</span>
@@ -26,7 +26,7 @@ const Usercard = ({ user, deleteUserById, setUpgradeInfoUser }) => {
       <div className="container__btn__user">
         <button className="btn_user" onClick={() => deleteUserById(user.id)}>
           <i className="fa-solid fa-trash"></i>
-        </button>
+        </button >
         {/* <button className="btn_user" id="btn-modal" onClick={handleEdit}>
           <i className="fa-solid fa-user-pen"></i>
         </button> */}
