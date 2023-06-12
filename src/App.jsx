@@ -6,7 +6,7 @@ import Loading from "./compuones/Loading";
 import UserCard from "./compuones/UserCard";
 import stylesModal from "./styles/stylesModal.css";
 import stylesLoanding from './styles/stylesLoading.css'
-const BASEURL = "https://users-crud1.herokuapp.com";
+const BASEURL = "https://users-crud.academlo.tech/";
 function App() {
   const [users, setUsers] = useState();
   const [upgradeInfoUser, setUpgradeInfoUser] = useState();
